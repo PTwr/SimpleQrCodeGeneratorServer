@@ -1,6 +1,7 @@
 # WHY?!
 
-Because injecting QR code by URL into Excel is easiest way, and using online services throws you into quagmire of GDPR and corpo security :)
+Because injecting QR code by URL into Excel is easiest way, and using online services throws you into quagmire of GDPR and corpo security, while existing solutions were harder to use than "just run the .exe, mate!" :)
+
 
 # How to use
 
