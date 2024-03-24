@@ -23,6 +23,23 @@ If you can run Excel, you can run this :)
 However, depending on how strict security is on your corpo provided laptop, you might not be able to host HTTP server. 
 As counter arguments to get it whitelisted, or hosted on company server, you can just say it skips all the GDPR bullshit by keeping everything local.
 
+# Usage
+
+Examples
+- `http://localhost:5000/?text=you%20can%20rely%20on%20default%20values`
+- `http://localhost:5000/?text=Or%20Provide%20Everything&color=pink&backgroundColor=LightCoral&blockSize=10&ECC=H`
+
+Everything is optional, and has good default values, but if you don't provide `text` ya gonna have nothing in QR Code :)
+
+Parameters:
+- text: the stuff ya gonna get into QR Code, remember to `EncodeURL` or ya gonna have bad time
+- color: primary color (filled squares), can be hex or named color. Default: black
+- backgroundColor: secondary color (background), can be hex or named color. Default: white
+- blockSize: pixel size of each square, its an integer number. Default: 10
+- ECC: error correction level, possible values are L (~7% ECC), M (~15% ECC), Q (~25% ECC), H (~30% ECC). Only first letter is checked so you can send words to make code more readable. Default: M (~15% ECC)
+
+List of supported "named colors": https://learn.microsoft.com/en-us/dotnet/api/system.drawing.knowncolor?view=net-8.0
+
 # How to consume from VBA
 
 Watch this tutorial: https://www.youtube.com/watch?v=9ETS2qK_jYc (thats how I learned how to do it :D)
