@@ -70,3 +70,9 @@ Sub AddPicture()
  ActiveSheet.Shapes.AddPicture Url, msoFalse, msoTrue, x, y, w, h
 End Sub
 ```
+
+# Licensing
+
+Its MIT, which basially means you can do anything (legal) without being scared of what viral nature of GPL would do to your corpo secrets :)
+
+Oh, and I keep the authorship and stuff. But lets be real, writing this Readme took waay more time than writing the program! Its like 10 lines of copy&pasted code, there's nothing worth of stealing here :D
